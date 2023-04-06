@@ -5,26 +5,26 @@ function perfil() {
           num = document.querySelector('#num'),
           repositorios = document.querySelector('#repositorios')
 
-    fetch('https://api.github.com/users/camilo51')
-    .then(resp => resp.json())
-    .then(respuesta => {
-        console.log(respuesta);
-        img.src = `${respuesta.avatar_url}`;
-        name.append(respuesta.name)
-        subName.append(`@${respuesta.login}`)
-        num.append(`Cantidad de repositorios de GitHub: ${respuesta.public_repos}`)
-        // repositorios(
-        //     fetch(respuesta.repos_url).then(entrada => entrada.json())
-        //     .then(entry => {
-        //         console.log(entry)
-        //         entry.forEach(element => {
-        //             console.log(element)
-        //              repositorios.append(element.name)
-        //         });
-        //     })
-        //     .catch(err => err)
-        // )
-    })
+    // fetch('https://api.github.com/users/camilo51')
+    // .then(resp => resp.json())
+    // .then(respuesta => {
+    //     console.log(respuesta);
+    //     img.src = `${respuesta.avatar_url}`;
+    //     name.append(respuesta.name)
+    //     subName.append(`@${respuesta.login}`)
+    //     num.append(`Cantidad de repositorios de GitHub: ${respuesta.public_repos}`)
+    //     // repositorios(
+    //     //     fetch(respuesta.repos_url).then(entrada => entrada.json())
+    //     //     .then(entry => {
+    //     //         console.log(entry)
+    //     //         entry.forEach(element => {
+    //     //             console.log(element)
+    //     //              repositorios.append(element.name)
+    //     //         });
+    //     //     })
+    //     //     .catch(err => err)
+    //     // )
+    // })
 }
 perfil()
 function boton() {

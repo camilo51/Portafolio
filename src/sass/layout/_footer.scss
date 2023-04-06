@@ -1,4 +1,25 @@
+@use 'base/variables' as v;
+
 .footer {
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
+    background-color: v.$morado;
+    
+    &--about{
+        background: none;
+    }
+
+    &__redes{
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+
+        a{
+            background-color: v.$rosadoTransparente;
+            padding: .5rem 1rem;
+            border-radius: .5rem;
+        }
+    }
 }

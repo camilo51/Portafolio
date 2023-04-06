@@ -61,6 +61,7 @@
         h3 {
             top: -5rem;
             margin-bottom: .5rem;
+            font-size: 4.5rem;
         }
         p {
             top: 5rem;
@@ -69,14 +70,14 @@
             position: relative;
             opacity: 0;
         }
-        &, h3, p, .btn--proyecto{
+        &, h3, .btn--proyecto{
             transition: all ease .5s;
         }
     }
     &:hover>&__cuerpo{
         background-color: v.$rosadoTransparente;
 
-        h3, p{
+        h3{
             top: 0;
             opacity: 1;
         }
